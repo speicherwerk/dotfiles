@@ -16,3 +16,6 @@ bindkey  '^?' backward-delete-char
 # Quit shell like vim
 alias :q='exit'
 
+autoload -zU promptinit && promptinit
+prompt adam1
+
