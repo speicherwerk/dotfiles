@@ -13,6 +13,8 @@ bindkey ^R history-incremental-search-backward
 bindkey ^S history-incremental-search-forward
 bindkey ^A beginning-of-line
 bindkey ^E end-of-line
+bindkey ^N down-history
+bindkey ^P up-history
 bindkey  '^?' backward-delete-char
 
 # Quit shell like vim
