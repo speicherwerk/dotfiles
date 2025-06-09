@@ -11,6 +11,8 @@ command -v gmake 2>&1 >/dev/null && alias make='gmake'
 bindkey -v
 bindkey ^R history-incremental-search-backward
 bindkey ^S history-incremental-search-forward
+bindkey ^A beginning-of-line
+bindkey ^E end-of-line
 bindkey  '^?' backward-delete-char
 
 # Quit shell like vim
