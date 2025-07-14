@@ -23,8 +23,8 @@ alias :q='exit'
 
 alias ls='ls --color'
 
-autoload -zU promptinit && promptinit
-prompt adam1
+autoload -U colors && colors
+PROMPT="%{$fg_bold[magenta]%}%n%{$fg[blue]%}@%{$fg_bold[magenta]%}%m%{$reset_color%}: "
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
