@@ -6,6 +6,7 @@ set number relativenumber
 
 " color scheme 
 colors sorbet
+autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
 
 " syntax highlighting
 syntax on
