@@ -26,3 +26,8 @@ alias ls='ls --color'
 autoload -zU promptinit && promptinit
 prompt adam1
 
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+
