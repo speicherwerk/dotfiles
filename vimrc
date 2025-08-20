@@ -39,7 +39,8 @@ set spell
 set complete+=kspell
 set ts=4 sw=4
 set expandtab
-let g:netrw_keepdir=0
+let g:netrw_keepdir = 0
+let g:netrw_bufsettings = 'nu rnu'
 
 " remove ugly gray background from comments
 hi Comment cterm=NONE
