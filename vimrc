@@ -40,7 +40,7 @@ set complete+=kspell
 set ts=4 sw=4
 set expandtab
 let g:netrw_keepdir = 0
-let g:netrw_bufsettings = 'nu rnu'
+let g:netrw_bufsettings = 'nu rnu noma nomod nowrap ro nobl'
 
 " remove ugly gray background from comments
 hi Comment cterm=NONE
