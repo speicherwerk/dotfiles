@@ -20,8 +20,9 @@ bindkey '^U' kill-whole-line
 
 # Quit shell like vim
 alias :q='exit'
-
+# Let there be color
 alias ls='ls --color'
+alias grep='grep --color'
 
 autoload -U colors && colors
 PROMPT="%{$fg_bold[magenta]%}%n%{$fg[blue]%}@%{$fg_bold[magenta]%}%m%{$reset_color%}: "
