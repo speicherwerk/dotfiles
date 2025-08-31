@@ -25,7 +25,7 @@ alias ls='ls --color'
 alias grep='grep --color'
 
 autoload -U colors && colors
-PROMPT="%{$fg_bold[magenta]%}%n%{$fg[blue]%}@%{$fg_bold[magenta]%}%m%{$reset_color%}: "
+PROMPT="%{$fg_bold[magenta]%}%n%{$fg[blue]%}@%{$fg_bold[magenta]%}%1d%{$reset_color%}: "
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
