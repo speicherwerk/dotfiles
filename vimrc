@@ -39,7 +39,6 @@ set spell
 set complete+=kspell
 set ts=4 sw=4
 set expandtab
-let g:netrw_keepdir = 0
 let g:netrw_bufsettings = 'nu rnu noma nomod nowrap ro nobl'
 
 " remove ugly gray background from comments
@@ -48,10 +47,6 @@ hi SpecialComment cterm=NONE
 
 set statusline+=%{wordcount().words}\ words
 
-" leader l to print ls -lah and jmp to the end of the line
-noremap <Leader>l :r !ls -ah1<CR> $
-" leader f to print ls -a1 and jmp to the end of the line
-noremap <Leader>f :r !ls -a1<CR> $
 " leader d to print date
 noremap <Leader>d :r !date -I
 
