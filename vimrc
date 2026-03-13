@@ -1,10 +1,10 @@
-set nocompatible              " be iMproved, required
+set nocompatible             " be iMproved, required
 filetype plugin indent on    " required
 
 " Hybrid line numbering
 set number relativenumber
 
-" color scheme 
+" color scheme
 colors sorbet
 autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
 
@@ -25,6 +25,7 @@ augroup END
 " make java switch expression not break syntax highlighting
 syn region  javaLabelRegion	transparent matchgroup=javaLabel start="\<case\>" matchgroup=NONE end=":" end="->" contains=javaNumber,javaCharacter,javaString
 
+" Space as leader key
 let mapleader=" "
 
 set background=dark
@@ -47,13 +48,11 @@ hi SpecialComment cterm=NONE
 
 set statusline+=%{wordcount().words}\ words
 
-" leader d to print date
-noremap <Leader>d :r !date -I
-
-" some setting to make text editing way better
+" always navigate by visual line
 noremap j gj
 noremap k gk
 
+" Auto line breaks in txt and md files
 autocmd BufRead,BufNewFile *.md setlocal tw=80
 autocmd BufRead,BufNewFile *.txt setlocal tw=80
 
