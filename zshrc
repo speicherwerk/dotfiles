@@ -20,6 +20,16 @@ alias :q='exit'
 alias ls='ls --color'
 alias grep='grep --color'
 
+# Prose nvim
+pnvim() {
+    nvim\
+        +Limelight\
+        "+colors lauds"\
+        -c "autocmd VimEnter * ++once lua vim.defer_fn(function() vim.o.laststatus = 0 require('lualine').hide() end, 200)"\
+        "$@"
+}
+
+
 # Set the prompt
 autoload -U colors && colors
 PROMPT="%{$fg_bold[magenta]%}%n%{$fg[blue]%}@%{$fg_bold[magenta]%}%1d%{$reset_color%}: "
